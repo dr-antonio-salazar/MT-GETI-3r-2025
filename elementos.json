@@ -167,7 +167,7 @@
       "id": "cadena_bomba_aceite",
       "name": "cadena bomba aceite",
       "description": "Cadena que transmite el movimiento del cigueñal a la bpomba de aceite",
-      "images": ["corona_bomba_aceite_mesa.jpeg"],
+      "images": ["cadena bomba de aceite.jpg"],
       "cad_model": [""]
     },
     {
