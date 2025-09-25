@@ -52,8 +52,8 @@
       "cad_model": [""]
     },
     {
-      "id": "canal_lubricacion",
-      "name": "Canal de lubricación",
+      "id": "cojinetes_lubricacion_arbol_levas",
+      "name": "cojinetes lubricación árbol de levas",
       "description": "Conducto interno que distribuye el aceite lubricante a las distintas partes móviles del motor.",
       "images": ["canal_lubricacion_mesa.jpeg"],
       "cad_model": [""]
@@ -115,13 +115,6 @@
       "cad_model": [""]
     },
     {
-      "id": "parte_inferior",
-      "name": "Parte inferior",
-      "description": "Zona baja del motor que incluye el bloque inferior y soportes estructurales.",
-      "images": ["parte_inferior_mon.jpeg"],
-      "cad_model": [""]
-    },
-    {
       "id": "junta_ciguenal",
       "name": "Junta cigüeñal",
       "description": "Elemento de sellado que evita fugas de aceite en el paso del cigüeñal a través del bloque motor.",
@@ -167,6 +160,13 @@
       "id": "corona_bomba_aceite",
       "name": "Corona bomba aceite",
       "description": "Engranaje que recibe el movimiento de la cadena y lo transmite a la bomba de aceite.",
+      "images": ["corona_bomba_aceite_mesa.jpeg"],
+      "cad_model": [""]
+    },   
+    {
+      "id": "cadena_bomba_aceite",
+      "name": "cadena bomba aceite",
+      "description": "Cadena que transmite el movimiento del cigueñal a la bpomba de aceite",
       "images": ["corona_bomba_aceite_mesa.jpeg"],
       "cad_model": [""]
     },
