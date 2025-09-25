@@ -160,7 +160,7 @@
       "id": "corona_bomba_aceite",
       "name": "Corona bomba aceite",
       "description": "Engranaje que recibe el movimiento de la cadena y lo transmite a la bomba de aceite.",
-      "images": ["corona_bomba_aceite_mesa.jpeg"],
+      "images": ["corona bomba de aceite.jpg"],
       "cad_model": [""]
     },   
     {
