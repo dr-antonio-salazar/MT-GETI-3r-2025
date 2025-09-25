@@ -1,0 +1,464 @@
+{
+  "version": "1.0",
+  "updated_at": "2025-09-19",
+  "steps": [
+    {
+      "id": "colector_admision",
+      "title": "Desmontar colector de admisión",
+      "description": "Aflojar tornillos y abrazaderas; retirar con cuidado para no dañar la junta.",
+      "elements": [
+        "colector_admision"
+      ],
+      "depends_on": [],
+      "images": [
+        "colector_admision_mesa.jpeg",
+        "colector_admision_mon.jpeg"
+      ]
+    },
+    {
+      "id": "junta_colector_admision",
+      "title": "Retirar junta colector de admisión",
+      "description": "Extraer la junta con cuidado.",
+      "elements": [
+        "junta_colector_admision"
+      ],
+      "depends_on": [
+        "colector_admision"
+      ],
+      "images": [
+        "junta_colector_admision_mesa.jpeg"
+      ]
+    },
+    {
+      "id": "tapa_balancines",
+      "title": "Desmontar tapa de balancines",
+      "description": "Aflojar tornillos perimetrales y retirar la tapa con cuidado.",
+      "elements": [
+        "tapa_balancines"
+      ],
+      "depends_on": [
+        "junta_colector_admision"
+      ],
+      "images": [
+        "tapa_balancines_mesa.jpeg",
+        "tapa_balancines_mon.jpeg"
+      ]
+    },
+    {
+      "id": "bomba_combustible",
+      "title": "Retirar bomba de combustible",
+      "description": "Quitar tornillos, retirar la bomba.",
+      "elements": [
+        "bomba_combustible"
+      ],
+      "depends_on": [
+        "tapa_balancines"
+      ],
+      "images": [
+        "bomba_combustible_mesa.jpeg",
+        "bomba_combustible_mon.jpeg"
+      ]
+    },
+    {
+      "id": "arbol_balancines",
+      "title": "Extraer árbol de balancines",
+      "description": "Aflojar tornillos y retirar el árbol con cuidado para no dañar balancines.",
+      "elements": [
+        "arbol_balancines"
+      ],
+      "depends_on": [
+        "bomba_combustible"
+      ],
+      "images": [
+        "arbol_balancines_mesa.jpeg",
+        "arbol_balancines_tren_valvulas_mon.jpeg"
+      ]
+    },
+    {
+      "id": "abrazadera_arbol_levas",
+      "title": "Quitar abrazaderas del árbol de levas",
+      "description": "Aflojar pernos y retirar abrazaderas en orden recomendado.",
+      "elements": [
+        "abrazadera_arbol_levas"
+      ],
+      "depends_on": [
+        "arbol_balancines"
+      ],
+      "images": [
+        "abrazadera_arbol_levas_mesa.jpeg",
+        "abrazadera_arbol_levas_mon.jpeg"
+      ]
+    },
+    {
+      "id": "arbol_levas",
+      "title": "Extraer árbol de levas",
+      "description": "Sacar con cuidado deslizando para no dañar los apoyos.",
+      "elements": [
+        "arbol_levas"
+      ],
+      "depends_on": [
+        "abrazadera_arbol_levas"
+      ],
+      "images": [
+        "arbol_levas_mesa.jpeg"
+      ]
+    },
+    {
+      "id": "canal_lubricacion",
+      "title": "Retirar canal de lubricación",
+      "description": "Extraer conducto interno de lubricación.",
+      "elements": [
+        "canal_lubricacion"
+      ],
+      "depends_on": [
+        "arbol_levas"
+      ],
+      "images": [
+        "canal_lubricacion_mesa.jpeg"
+      ]
+    },
+    {
+      "id": "tapa_accionadora_valvulas",
+      "title": "Desmontar tapa de accionadores de válvulas",
+      "description": "Retirar la cubierta protectora de los accionadores de válvulas.",
+      "elements": [
+        "tapa_accionadora_valvulas"
+      ],
+      "depends_on": [
+        "canal_lubricacion"
+      ],
+      "images": [
+        "tapa_accionadora_valvulas_mesa.jpeg",
+        "tapa_accionadora_valvulas_mon.jpeg"
+      ]
+    },
+    {
+      "id": "tapa_central_exterior",
+      "title": "Quitar tapas centrales y exteriores",
+      "description": "Desatornillar y retirar tapas que cubren el sistema de distribución.",
+      "elements": [
+        "tapa_central_exterior"
+      ],
+      "depends_on": [
+        "tapa_accionadora_valvulas"
+      ],
+      "images": [
+        "tapa_central_exterior_mesa.jpeg",
+        "tapa_central_exterior_mon.jpeg"
+      ]
+    },
+    {
+      "id": "poleas_sistema_distribucion",
+      "title": "Extraer poleas del sistema de distribución",
+      "description": "Aflojar fijaciones y retirar poleas con herramientas adecuadas",
+      "elements": [
+        "poleas_sistema_distribucion"
+      ],
+      "depends_on": [
+        "tapa_central_exterior"
+      ],
+      "images": [
+        "poleas_sistema_distribucion_mesa.jpeg",
+        "sistema_distribucion_mon.jpeg"
+      ]
+    },
+    {
+      "id": "tensor_correa",
+      "title": "Retirar tensor de correa",
+      "description": "Aflojar y retirar el tensor que mantiene la tensión de la correa.",
+      "elements": [
+        "tensor_correa"
+      ],
+      "depends_on": [
+        "poleas_sistema_distribucion"
+      ],
+      "images": [
+        "tensor_mesa.jpeg"
+      ]
+    },
+    {
+      "id": "culata",
+      "title": "Desmontar culata",
+      "description": "Aflojar tornillos en cruz y retirar la culata con útil adecuado.",
+      "elements": [
+        "culata"
+      ],
+      "depends_on": [
+        "tensor_correa"
+      ],
+      "images": [
+        "culata_mesa.jpeg",
+        "culata_mon.jpeg"
+      ]
+    },
+    {
+      "id": "junta_culata",
+      "title": "Retirar junta de culata",
+      "description": "Retirar junta con cuidado.",
+      "elements": [
+        "junta_culata"
+      ],
+      "depends_on": [
+        "culata"
+      ],
+      "images": [
+        "junta_culata.jpeg"
+      ]
+    },
+    {
+      "id": "rodillo_tensor",
+      "title": "Quitar rodillo tensor",
+      "description": "Retirar rodillo que guía la correa de distribución.",
+      "elements": [
+        "rodillo_tensor"
+      ],
+      "depends_on": [
+        "junta_culata"
+      ],
+      "images": [
+        "rodillo_ tensor_mesa.jpeg"
+      ]
+    },
+    {
+      "id": "bomba_agua",
+      "title": "Desmontar bomba de agua",
+      "description": "Retirar bomba de agua aflojando tornillos.",
+      "elements": [
+        "bomba_agua"
+      ],
+      "depends_on": [
+        "rodillo_tensor"
+      ],
+      "images": [
+        "bomba_agua_mesa.jpeg"
+      ]
+    },
+    {
+      "id": "proteccion_interior_sistema_distribucion",
+      "title": "Retirar protección interior sistema distribución",
+      "description": "Quitar cubierta interior para dejar acceso libre.",
+      "elements": [
+        "proteccion_interior_sistema_distribucion"
+      ],
+      "depends_on": [
+        "bomba_agua"
+      ],
+      "images": [
+        "proteccion_interior_sistema_distribucion_mesa.jpeg"
+      ]
+    },
+    {
+      "id": "parte_inferior",
+      "title": "Desmontar parte inferior",
+      "description": "Dar la vuelta al motor.",
+      "elements": [
+        "parte_inferior"
+      ],
+      "depends_on": [
+             ],
+      "images": [
+        "parte_inferior_mon.jpeg",
+        "motor_girado_mon.jpeg"
+      ]
+    },
+    {
+      "id": "junta_ciguenal",
+      "title": "Retirar junta de cigüeñal",
+      "description": "Extraer junta y revisar posibles fugas o desgaste.",
+      "elements": [
+        "junta_ciguenal"
+      ],
+      "depends_on": [
+        "parte_inferior"
+      ],
+      "images": [
+        "junta_ciguenal_mesa.jpeg"
+      ]
+    },
+    {
+      "id": "carter",
+      "title": "Desmontar cárter",
+      "description": "Aflojar tornillos inferiores y retirar cárter con cuidado.",
+      "elements": [
+        "carter"
+      ],
+      "depends_on": [
+        "junta_ciguenal"
+      ],
+      "images": [
+        "carter_mesa.jpeg"
+      ]
+    },
+    {
+      "id": "tapa_plastico_aceite",
+      "title": "Retirar tapa de plástico del aceite",
+      "description": "Quitar tapa superior para acceso al llenado de aceite.",
+      "elements": [
+        "tapa_plastico_aceite"
+      ],
+      "depends_on": [
+        "carter"
+      ],
+      "images": [
+        "tapa_plastico_aceite_mesa.jpeg"
+      ]
+    },
+    {
+      "id": "pinon_fuerza_ciguenal",
+      "title": "Extraer piñón de fuerza de cigüeñal",
+      "description": "Retirar piñón engranado en el cigüeñal.",
+      "elements": [
+        "pinon_fuerza_ciguenal"
+      ],
+      "depends_on": [
+        "tapa_plastico_aceite"
+      ],
+      "images": [
+        "pinon_fuerza_ciguenal_mesa.jpeg"
+      ]
+    },
+    {
+      "id": "soporte_lateral_ciguenal",
+      "title": "Quitar soporte lateral del cigüeñal",
+      "description": "Retirar soporte fijado lateralmente al cigüeñal.",
+      "elements": [
+        "soporte_lateral_ciguenal"
+      ],
+      "depends_on": [
+        "pinon_fuerza_ciguenal"
+      ],
+      "images": [
+        "soporte_lateral_ciguenal_mesa.jpeg",
+        "soporte_lateral_ciguenal_mon.jpeg"
+      ]
+    },
+    {
+      "id": "tensor_cadena_bomba_aceite",
+      "title": "Retirar tensor de cadena de bomba de aceite",
+      "description": "Aflojar y extraer el tensor de la cadena de la bomba de aceite.",
+      "elements": [
+        "tensor_cadena_bomba_aceite"
+      ],
+      "depends_on": [
+        "soporte_lateral_ciguenal"
+      ],
+      "images": [
+        "tensor_cadena_bomba_aceite_mesa.jpeg"
+      ]
+    },
+    {
+      "id": "corona_bomba_aceite",
+      "title": "Quitar corona de bomba de aceite",
+      "description": "Extraer engranaje de transmisión de la bomba de aceite.",
+      "elements": [
+        "corona_bomba_aceite"
+      ],
+      "depends_on": [
+        "tensor_cadena_bomba_aceite"
+      ],
+      "images": [
+        "corona_bomba_aceite_mesa.jpeg"
+      ]
+    },
+    {
+      "id": "bomba_aceite",
+      "title": "Desmontar bomba de aceite",
+      "description": "Aflojar tornillos y retirar la bomba de aceite.",
+      "elements": [
+        "bomba_aceite"
+      ],
+      "depends_on": [
+        "corona_bomba_aceite"
+      ],
+      "images": [
+        "bomba_aceite_mesa.jpeg"
+      ]
+    },
+    {
+      "id": "abrazadera_ciguenal",
+      "title": "Retirar abrazaderas de cigüeñal",
+      "description": "Aflojar y retirar abrazaderas que sujetan el cigüeñal.",
+      "elements": [
+        "abrazadera_ciguenal"
+      ],
+      "depends_on": [
+        "bomba_aceite"
+      ],
+      "images": [
+        "abrazadera_ciguenal_mesa.jpeg"
+      ]
+    },
+    {
+      "id": "abrazadera_piston",
+      "title": "Quitar abrazaderas de pistón",
+      "description": "Retirar fijaciones del bulón del pistón.",
+      "elements": [
+        "abrazadera_piston"
+      ],
+      "depends_on": [
+        "abrazadera_ciguenal"
+      ],
+      "images": [
+        "abrazadera_piston_mesa.jpeg"
+      ]
+    },
+    {
+      "id": "piston",
+      "title": "Extraer pistones",
+      "description": "Retirar pistones del interior de los cilindros.",
+      "elements": [
+        "piston"
+      ],
+      "depends_on": [
+        "abrazadera_piston"
+      ],
+      "images": [
+        "piston_mesa.jpeg"
+      ]
+    },
+    {
+      "id": "ciguenal",
+      "title": "Extraer cigüeñal",
+      "description": "Sacar cigüeñal con cuidado, evitando dañar apoyos.",
+      "elements": [
+        "ciguenal"
+      ],
+      "depends_on": [
+        "piston"
+      ],
+      "images": [
+        "ciguenal_mon.jpeg"
+      ]
+    },
+    {
+      "id": "biela",
+      "title": "Extraer bielas",
+      "description": "Retirar bielas que unen pistón y cigüeñal.",
+      "elements": [
+        "biela"
+      ],
+      "depends_on": [
+        "bloque_motor"
+      ],
+      "images": [
+        "biela_mesa.jpeg"
+      ]
+    },
+    {
+      "id": "bulon",
+      "title": "Quitar bulones",
+      "description": "Retirar pasadores que unen pistones y bielas.",
+      "elements": [
+        "bulon"
+      ],
+      "depends_on": [
+        "biela"
+      ],
+      "images": [
+        "bulon_mesa.jpeg"
+      ]
+    }
+
+
+  ]
+}
