@@ -220,6 +220,13 @@
       "cad_model": [""]
     },
     {
+      "id": "cojinete_biela",
+      "name": "Cojinete de la biela",
+      "description": "Sirve para lubricar la unión biela-cigüeñal.",
+      "images": ["cojinete.jpg"],
+      "cad_model": [""]
+    },
+    {
       "id": "bulon",
       "name": "Bulón",
       "description": "El bulón es el pasador que une el pistón con la biela, permitiendo que el pistón se desplace dentro del cilindro.",
