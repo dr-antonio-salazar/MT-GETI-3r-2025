@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updated_at": "2025-09-19",
+  "updated_at": "2025-09-26",
   "steps": [
     {
       "id": "colector_admision",
@@ -38,6 +38,21 @@
       ],
       "depends_on": [
         "junta_colector_admision"
+      ],
+      "images": [
+        "tapa_balancines_mesa.jpeg",
+        "tapa_balancines_mon.jpeg"
+      ]
+    },
+    {
+      "id": "balancines",
+      "title": "Desmontar los balancines",
+      "description": "Aflojar tornillos y sacarlos.",
+      "elements": [
+        "balancines"
+      ],
+      "depends_on": [
+        "tapa_balancines"
       ],
       "images": [
         "tapa_balancines_mesa.jpeg",
@@ -104,11 +119,11 @@
       ]
     },
     {
-      "id": "canal_lubricacion",
-      "title": "Retirar canal de lubricación",
+      "id": "cojinetes_lubricacion_arbol_levas",
+      "title": "Retirar canal de lubricación del árbol de levas",
       "description": "Extraer conducto interno de lubricación.",
       "elements": [
-        "canal_lubricacion"
+        "cojinetes_lubricacion_arbol_levas"
       ],
       "depends_on": [
         "arbol_levas"
@@ -125,7 +140,7 @@
         "tapa_accionadora_valvulas"
       ],
       "depends_on": [
-        "canal_lubricacion"
+        "cojinetes_lubricacion_arbol_levas"
       ],
       "images": [
         "tapa_accionadora_valvulas_mesa.jpeg",
@@ -148,21 +163,6 @@
       ]
     },
     {
-      "id": "poleas_sistema_distribucion",
-      "title": "Extraer poleas del sistema de distribución",
-      "description": "Aflojar fijaciones y retirar poleas con herramientas adecuadas",
-      "elements": [
-        "poleas_sistema_distribucion"
-      ],
-      "depends_on": [
-        "tapa_central_exterior"
-      ],
-      "images": [
-        "poleas_sistema_distribucion_mesa.jpeg",
-        "sistema_distribucion_mon.jpeg"
-      ]
-    },
-    {
       "id": "tensor_correa",
       "title": "Retirar tensor de correa",
       "description": "Aflojar y retirar el tensor que mantiene la tensión de la correa.",
@@ -170,7 +170,7 @@
         "tensor_correa"
       ],
       "depends_on": [
-        "poleas_sistema_distribucion"
+        "tapa_central_exterior"
       ],
       "images": [
         "tensor_mesa.jpeg"
@@ -247,18 +247,18 @@
         "proteccion_interior_sistema_distribucion_mesa.jpeg"
       ]
     },
-    {
-      "id": "parte_inferior",
-      "title": "Desmontar parte inferior",
-      "description": "Dar la vuelta al motor.",
+        {
+      "id": "polea_ciguenal",
+      "title": "Retirar polea de cigüeñal",
+      "description": "Extraer la polea.",
       "elements": [
-        "parte_inferior"
+        "junta_ciguenal"
       ],
       "depends_on": [
-             ],
+        "proteccion_interior_sistema_distribucion"
+      ],
       "images": [
-        "parte_inferior_mon.jpeg",
-        "motor_girado_mon.jpeg"
+        "junta_ciguenal_mesa.jpeg"
       ]
     },
     {
@@ -269,10 +269,10 @@
         "junta_ciguenal"
       ],
       "depends_on": [
-        "parte_inferior"
+        "polea_ciguenal"
       ],
       "images": [
-        "junta_ciguenal_mesa.jpeg"
+        "Junta_cigüeñal_bloque.jpg"
       ]
     },
     {
@@ -332,6 +332,20 @@
         "soporte_lateral_ciguenal_mon.jpeg"
       ]
     },
+        {
+      "id": "bomba_aceite",
+      "title": "Desmontar bomba de aceite",
+      "description": "Aflojar tornillos y retirar la bomba de aceite.",
+      "elements": [
+        "bomba_aceite"
+      ],
+      "depends_on": [
+        "soporte_lateral_ciguenal"
+      ],
+      "images": [
+        "bomba_aceite_mesa.jpeg"
+      ]
+    },
     {
       "id": "tensor_cadena_bomba_aceite",
       "title": "Retirar tensor de cadena de bomba de aceite",
@@ -340,7 +354,7 @@
         "tensor_cadena_bomba_aceite"
       ],
       "depends_on": [
-        "soporte_lateral_ciguenal"
+        "bomba_aceite"
       ],
       "images": [
         "tensor_cadena_bomba_aceite_mesa.jpeg"
@@ -357,35 +371,21 @@
         "tensor_cadena_bomba_aceite"
       ],
       "images": [
-        "corona_bomba_aceite_mesa.jpeg"
+        "corona bomba de aceite.jpg"
       ]
     },
     {
-      "id": "bomba_aceite",
-      "title": "Desmontar bomba de aceite",
-      "description": "Aflojar tornillos y retirar la bomba de aceite.",
+      "id": "cadena_bomba_aceite",
+      "title": "Quitar cadena de bomba de aceite",
+      "description": "Separar la cadena de la corona.",
       "elements": [
-        "bomba_aceite"
+        "cadena_bomba_aceite"
       ],
       "depends_on": [
         "corona_bomba_aceite"
       ],
       "images": [
-        "bomba_aceite_mesa.jpeg"
-      ]
-    },
-    {
-      "id": "abrazadera_ciguenal",
-      "title": "Retirar abrazaderas de cigüeñal",
-      "description": "Aflojar y retirar abrazaderas que sujetan el cigüeñal.",
-      "elements": [
-        "abrazadera_ciguenal"
-      ],
-      "depends_on": [
-        "bomba_aceite"
-      ],
-      "images": [
-        "abrazadera_ciguenal_mesa.jpeg"
+        "cadena bomba de aceite.jpg"
       ]
     },
     {
@@ -396,7 +396,7 @@
         "abrazadera_piston"
       ],
       "depends_on": [
-        "abrazadera_ciguenal"
+        "cadena_bomba_aceite"
       ],
       "images": [
         "abrazadera_piston_mesa.jpeg"
@@ -415,21 +415,7 @@
       "images": [
         "piston_mesa.jpeg"
       ]
-    },
-    {
-      "id": "ciguenal",
-      "title": "Extraer cigüeñal",
-      "description": "Sacar cigüeñal con cuidado, evitando dañar apoyos.",
-      "elements": [
-        "ciguenal"
-      ],
-      "depends_on": [
-        "piston"
-      ],
-      "images": [
-        "ciguenal_mon.jpeg"
-      ]
-    },
+    },        
     {
       "id": "biela",
       "title": "Extraer bielas",
@@ -438,10 +424,24 @@
         "biela"
       ],
       "depends_on": [
-        "bloque_motor"
+        "piston"
       ],
       "images": [
         "biela_mesa.jpeg"
+      ]
+    }, 
+    {
+      "id": "cojinete_biela",
+      "title": "Extraer cojinetes de la biela",
+      "description": "Separar las bielas de sus cojinetes.",
+      "elements": [
+        "cojinete_biela"
+      ],
+      "depends_on": [
+        "biela"
+      ],
+      "images": [
+        "cojinete.jpg"
       ]
     },
     {
@@ -452,12 +452,55 @@
         "bulon"
       ],
       "depends_on": [
-        "biela"
+        "cojinete_biela"
       ],
       "images": [
         "bulon_mesa.jpeg"
       ]
     }
+    {
+      "id": "abrazadera_ciguenal",
+      "title": "Retirar abrazaderas de cigüeñal",
+      "description": "Aflojar y retirar abrazaderas que sujetan el cigüeñal.",
+      "elements": [
+        "abrazadera_ciguenal"
+      ],
+      "depends_on": [
+        "bulon"
+      ],
+      "images": [
+        "abrazadera_ciguenal_mesa.jpeg"
+      ]
+    },
+    {
+      "id": "ciguenal",
+      "title": "Extraer cigüeñal",
+      "description": "Sacar cigüeñal con cuidado, evitando dañar apoyos.",
+      "elements": [
+        "ciguenal"
+      ],
+      "depends_on": [
+        "abrazadera_ciguenal"
+      ],
+      "images": [
+        "cigüeñal.jpg"
+      ]
+    },    
+    {
+      "id": "bloque_motor",
+      "title": "Bloque motor es lo que queda restante en la base",
+      "description": "No se puede desmontar más ya.",
+      "elements": [
+        "bloque_motor"
+      ],
+      "depends_on": [
+        "ciguenal"
+      ],
+      "images": [
+        "bloque_motor_mon.jpeg"
+      ]
+    },
+
 
 
   ]
