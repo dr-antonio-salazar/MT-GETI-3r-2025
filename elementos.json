@@ -32,7 +32,7 @@
     },
     {
       "id": "arbol_balancines",
-      "name": "Árbol de balancines",
+      "name": "Balancines",
       "description": "Eje sobre el cual se montan los balancines que transmiten el movimiento de las levas a las válvulas.",
       "images": ["arbol_balancines_mesa.jpeg"],
       "cad_model": [""]
@@ -53,7 +53,7 @@
     },
     {
       "id": "cojinetes_lubricacion_arbol_levas",
-      "name": "cojinetes lubricación árbol de levas",
+      "name": "Cojinetes lubricación árbol de levas",
       "description": "Conducto interno que distribuye el aceite lubricante a las distintas partes móviles del motor.",
       "images": ["canal_lubricacion_mesa.jpeg"],
       "cad_model": [""]
@@ -172,7 +172,7 @@
     },   
     {
       "id": "cadena_bomba_aceite",
-      "name": "cadena bomba aceite",
+      "name": "Cadena bomba aceite",
       "description": "Cadena que transmite el movimiento del cigueñal a la bpomba de aceite",
       "images": ["cadena bomba de aceite.jpg"],
       "cad_model": [""]
@@ -193,7 +193,7 @@
     },
     {
       "id": "abrazadera_piston",
-      "name": "Abrazadera pistón",
+      "name": "Abrazadera del pistón",
       "description": "La abrazadera del pistón es la pieza que asegura el bulón dentro del pistón, evitando que se desplace lateralmente y garantizando la correcta unión entre pistón y biela.",
       "images": ["abrazadera_piston_mesa.jpeg"],
       "cad_model": [""]
