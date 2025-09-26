@@ -60,7 +60,7 @@
     },
     {
       "id": "tapa_accionadora_valvulas",
-      "name": "Tapa accionadores de válvulas",
+      "name": "Taqué",
       "description": "Cubierta que protege los componentes que accionan las válvulas, como taqués o balancines.",
       "images": ["tapa_accionadora_valvulas_mesa.jpeg"],
       "cad_model": [""]
