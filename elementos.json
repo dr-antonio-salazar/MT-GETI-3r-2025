@@ -115,10 +115,17 @@
       "cad_model": [""]
     },
     {
+      "id": "polea_ciguenal",
+      "name": "Polea del cigüeñal",
+      "description": "Polea que transmite el trabajo mecánico del cigüeñal a otros elementos del motor.",
+      "images": ["junta_ciguenal_mesa.jpeg"],
+      "cad_model": [""]
+    },
+    {
       "id": "junta_ciguenal",
       "name": "Junta cigüeñal",
       "description": "Elemento de sellado que evita fugas de aceite en el paso del cigüeñal a través del bloque motor.",
-      "images": ["junta_ciguenal_mesa.jpeg"],
+      "images": ["Junta_cigüeñal_bloque.jpg"],
       "cad_model": [""]
     },
     {
