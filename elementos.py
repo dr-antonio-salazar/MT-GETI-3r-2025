@@ -130,13 +130,14 @@ def main():
         else:
             st.warning("No se encontró la imagen en la carpeta 'images'.")  # aviso si falta imagen [file:1]
 
-    with meta_col:
-        st.subheader("Detalles")  # metadatos [file:1]
-        st.write("ID:", current.get("id"))  # id del elemento [file:1]
-        st.write("Imagen:", current.get("images", []))  # nombres de archivo de imagen en el JSON [file:1]
+    #with meta_col:
+    #    st.subheader("Detalles")  # metadatos [file:1]
+    #    st.write("ID:", current.get("id"))  # id del elemento [file:1]
+    #    st.write("Imagen:", current.get("images", []))  # nombres de archivo de imagen en el JSON [file:1]
 
-    st.caption("Asegurar que las imágenes existan en ./images con los nombres indicados en elementos.json.")  # recordatorio [file:1]
+    #st.caption("Asegurar que las imágenes existan en ./images con los nombres indicados en elementos.json.")  # recordatorio [file:1]
 
 if __name__ == "__main__":
     main()  # ejecución de la app [file:1]
+
 
