@@ -189,7 +189,7 @@
       "name": "Abrazadera de cigüeñal",
       "description": "Elemento que fija el cigüeñal en su posición dentro del bloque motor.",
       "images": ["abrazadera_ciguenal_mesa.jpeg"],
-      "cad_model": [""]
+      "cad_model": ["abrazadera_ciguenal.SLDPRT"]
     },
     {
       "id": "abrazadera_piston",
@@ -238,7 +238,7 @@
       "name": "Bulón",
       "description": "El bulón es el pasador que une el pistón con la biela, permitiendo que el pistón se desplace dentro del cilindro.",
       "images": ["bulon_mesa.jpeg"],
-      "cad_model": [""]
+      "cad_model": ["bulon.SLDPRT"]
     }
   ]
 }
