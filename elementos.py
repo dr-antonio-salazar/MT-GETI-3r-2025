@@ -99,13 +99,13 @@ def main():
             st.session_state.idx = (st.session_state.idx - 1) % len(elements)  # navegación circular [file:1]
         if st.button("Siguiente"):
             st.session_state.idx = (st.session_state.idx + 1) % len(elements)  # navegación circular [file:1]
-        st.selectbox(
-            "Ir a",
-            options=list(range(len(elements))),
-            format_func=lambda i: names[i],
-            index=st.session_state.idx,
-            key="selector",
-        )  # salto directo a cualquier elemento [file:1]
+        #st.selectbox(
+        #    "Ir a",
+        #    options=list(range(len(elements))),
+        #    format_func=lambda i: names[i],
+        #    index=st.session_state.idx,
+        #    key="selector",
+        #)  # salto directo a cualquier elemento [file:1]
 
     current = elements[st.session_state.idx]  # elemento activo [file:1]
     name = current.get("name", "Sin nombre")  # nombre [file:1]
@@ -139,3 +139,4 @@ def main():
 
 if __name__ == "__main__":
     main()  # ejecución de la app [file:1]
+
