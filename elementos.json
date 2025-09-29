@@ -231,7 +231,7 @@
       "name": "Cojinete de la biela",
       "description": "Sirve para lubricar la unión biela-cigüeñal.",
       "images": ["cojinete.jpg"],
-      "cad_model": [""]
+      "cad_model": ["cojinete_biela.SLDPRT"]
     },
     {
       "id": "bulon",
