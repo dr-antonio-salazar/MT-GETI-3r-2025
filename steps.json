@@ -4,7 +4,7 @@
   "steps": [
     {
       "id": "colector_admision",
-      "title": "Desmontar colector de admisión",
+      "title": "Quitar colector de admisión",
       "description": "Aflojar tornillos y abrazaderas; retirar con cuidado para no dañar la junta.",
       "elements": [
         "colector_admision"
@@ -38,21 +38,6 @@
       ],
       "depends_on": [
         "junta_colector_admision"
-      ],
-      "images": [
-        "tapa_balancines_mesa.jpeg",
-        "tapa_balancines_mon.jpeg"
-      ]
-    },
-    {
-      "id": "balancines",
-      "title": "Desmontar los balancines",
-      "description": "Aflojar tornillos y sacarlos.",
-      "elements": [
-        "balancines"
-      ],
-      "depends_on": [
-        "tapa_balancines"
       ],
       "images": [
         "tapa_balancines_mesa.jpeg",
@@ -115,12 +100,12 @@
         "abrazadera_arbol_levas"
       ],
       "images": [
-        "arbol_levas_mesa.jpeg"
+        "arbol_levas_conjunto.jpeg"
       ]
     },
     {
       "id": "cojinetes_lubricacion_arbol_levas",
-      "title": "Retirar canal de lubricación del árbol de levas",
+      "title": "Retirar cojinete de lubricación del árbol de levas",
       "description": "Extraer conducto interno de lubricación.",
       "elements": [
         "cojinetes_lubricacion_arbol_levas"
@@ -134,7 +119,7 @@
     },
     {
       "id": "tapa_accionadora_valvulas",
-      "title": "Desmontar tapa de accionadores de válvulas",
+      "title": "Desmontar taqué de válvulas",
       "description": "Retirar la cubierta protectora de los accionadores de válvulas.",
       "elements": [
         "tapa_accionadora_valvulas"
@@ -148,21 +133,6 @@
       ]
     },
     {
-      "id": "tapa_central_exterior",
-      "title": "Quitar tapas centrales y exteriores",
-      "description": "Desatornillar y retirar tapas que cubren el sistema de distribución.",
-      "elements": [
-        "tapa_central_exterior"
-      ],
-      "depends_on": [
-        "tapa_accionadora_valvulas"
-      ],
-      "images": [
-        "tapa_central_exterior_mesa.jpeg",
-        "tapa_central_exterior_mon.jpeg"
-      ]
-    },
-    {
       "id": "tensor_correa",
       "title": "Retirar tensor de correa",
       "description": "Aflojar y retirar el tensor que mantiene la tensión de la correa.",
@@ -170,10 +140,10 @@
         "tensor_correa"
       ],
       "depends_on": [
-        "tapa_central_exterior"
+        "tapa_accionadora_valvulas"
       ],
       "images": [
-        "tensor_mesa.jpeg"
+        "tensor_correa_conjunto.jpeg"
       ]
     },
     {
@@ -197,12 +167,28 @@
       "description": "Retirar junta con cuidado.",
       "elements": [
         "junta_culata"
+        
       ],
       "depends_on": [
         "culata"
       ],
       "images": [
-        "junta_culata.jpeg"
+        "junta_culata_conjunto.jpeg"
+      ]
+    },
+    {
+      "id": "tapa_central_exterior",
+      "title": "Quitar tapas centrales y exteriores",
+      "description": "Desatornillar y retirar tapas que cubren el sistema de distribución.",
+      "elements": [
+        "tapa_central_exterior"
+      ],
+      "depends_on": [
+        "junta_culata"
+      ],
+      "images": [
+        "tapa_central_exterior_mesa.jpeg",
+        "tapa_central_exterior_mon.jpeg"
       ]
     },
     {
@@ -213,10 +199,10 @@
         "rodillo_tensor"
       ],
       "depends_on": [
-        "junta_culata"
+        "tapa_central_exterior"
       ],
       "images": [
-        "rodillo_ tensor_mesa.jpeg"
+        "rodillo_tensor_conjunto.jpeg"
       ]
     },
     {
@@ -230,7 +216,7 @@
         "rodillo_tensor"
       ],
       "images": [
-        "bomba_agua_mesa.jpeg"
+        "bomba_de_agua_conjunto.jpeg"
       ]
     },
     {
@@ -252,13 +238,27 @@
       "title": "Retirar polea de cigüeñal",
       "description": "Extraer la polea.",
       "elements": [
-        "junta_ciguenal"
+        "polea_de_ciguenal"
       ],
       "depends_on": [
         "proteccion_interior_sistema_distribucion"
       ],
       "images": [
-        "junta_ciguenal_mesa.jpeg"
+        "junta_de_ciguenal_conjunto.jpeg"
+      ]
+    },
+    {
+      "id": "girar_motor",
+      "title": "Girar motor",
+      "description": "Assegurar-se de que no hay ninguna pieza suelta commo la culata y proceder a girar el motor",
+      "elements": [
+        ""
+      ],
+      "depends_on": [
+        "polea_ciguenal"
+      ],
+      "images": [
+        ""
       ]
     },
     {
@@ -269,7 +269,7 @@
         "junta_ciguenal"
       ],
       "depends_on": [
-        "polea_ciguenal"
+        "girar_motor"
       ],
       "images": [
         "Junta_cigüeñal_bloque.jpg"
@@ -286,7 +286,7 @@
         "junta_ciguenal"
       ],
       "images": [
-        "carter_mesa.jpeg"
+        "carter_cnjunto.jpeg"
       ]
     },
     {
@@ -304,7 +304,7 @@
       ]
     },
     {
-      "id": "pinon_fuerza_ciguenal",
+      "id": "soporte_lateral_ciguenal2",
       "title": "Extraer piñón de fuerza de cigüeñal",
       "description": "Retirar piñón engranado en el cigüeñal.",
       "elements": [
@@ -312,6 +312,20 @@
       ],
       "depends_on": [
         "tapa_plastico_aceite"
+      ],
+      "images": [
+        "pinon_fuerza_ciguenal_mesa.jpeg"
+      ]
+    },
+    {
+      "id": "pinon_fuerza_ciguenal",
+      "title": "Extraer piñón de fuerza de cigüeñal",
+      "description": "Retirar piñón engranado en el cigüeñal.",
+      "elements": [
+        "pinon_fuerza_ciguenal"
+      ],
+      "depends_on": [
+        "soporte_lateral_ciguenal2"
       ],
       "images": [
         "pinon_fuerza_ciguenal_mesa.jpeg"
