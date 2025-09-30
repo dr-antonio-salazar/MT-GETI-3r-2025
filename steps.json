@@ -238,7 +238,7 @@
       "title": "Retirar polea de cigüeñal",
       "description": "Extraer la polea.",
       "elements": [
-        "polea_de_ciguenal"
+        "polea_ciguenal"
       ],
       "depends_on": [
         "proteccion_interior_sistema_distribucion"
