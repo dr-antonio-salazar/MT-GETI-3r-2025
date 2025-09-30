@@ -300,7 +300,7 @@
         "carter"
       ],
       "images": [
-        "tapa_plastico_aceite_mesa.jpeg"
+        "tapa_plastico_aceite_conjunto.jpeg"
       ]
     },
     {
@@ -328,7 +328,7 @@
         "soporte_lateral_ciguenal2"
       ],
       "images": [
-        "pinon_fuerza_ciguenal_mesa.jpeg"
+        "pinon_conjunto.jpeg"
       ]
     },
     {
@@ -342,8 +342,7 @@
         "pinon_fuerza_ciguenal"
       ],
       "images": [
-        "soporte_lateral_ciguenal_mesa.jpeg",
-        "soporte_lateral_ciguenal_mon.jpeg"
+        "soporte_lateral_ciguenal_conjunto.jpeg"
       ]
     },
     {
@@ -357,7 +356,7 @@
         "soporte_lateral_ciguenal"
       ],
       "images": [
-        "bomba_aceite_mesa.jpeg"
+        "bomba_aceite_conjunto.jpeg"
       ]
     },
     {
