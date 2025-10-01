@@ -26,7 +26,7 @@
         "colector_admision"
       ],
       "images": [
-        "junta_colector_admision_mesa.jpeg"
+        "junta_colector_de_admision_conjunto.JPG"
       ]
     },
     {
@@ -86,7 +86,7 @@
       ],
       "images": [
         "abrazadera_arbol_levas_mesa.jpeg",
-        "abrazadera_arbol_levas_mon.jpeg"
+        "arbol_levas_conjunto.JPG"
       ]
     },
     {
@@ -114,7 +114,7 @@
         "arbol_levas"
       ],
       "images": [
-        "canal_lubricacion_mesa.jpeg"
+        "cojinetes_lubricacion_arbol_levas_conjunto.JPG"
       ]
     },
     {
@@ -143,7 +143,7 @@
         "tapa_accionadora_valvulas"
       ],
       "images": [
-        "tensor_correa_conjunto.jpeg"
+        "tensor_correa_conjunto.JPG"
       ]
     },
     {
@@ -173,7 +173,7 @@
         "culata"
       ],
       "images": [
-        "junta_culata_conjunto.jpeg"
+        "junta_culata_conjunto.JPG"
       ]
     },
     {
@@ -202,7 +202,7 @@
         "tapa_central_exterior"
       ],
       "images": [
-        "rodillo_tensor_conjunto.jpeg"
+        "rodillo_tensor_conjunto.JPG"
       ]
     },
     {
@@ -216,7 +216,7 @@
         "rodillo_tensor"
       ],
       "images": [
-        "bomba_de_agua_conjunto.jpeg"
+        "bomba_de_agua_conjunto.JPG"
       ]
     },
     {
@@ -230,7 +230,7 @@
         "bomba_agua"
       ],
       "images": [
-        "proteccion_interior_sistema_distribucion_mesa.jpeg"
+        "proteccion_interior_sistema_distribucion_conjunto.JPG"
       ]
     },
     {
@@ -244,35 +244,21 @@
         "proteccion_interior_sistema_distribucion"
       ],
       "images": [
-        "junta_de_ciguenal_conjunto.jpeg"
-      ]
-    },
-    {
-      "id": "girar_motor",
-      "title": "Girar motor",
-      "description": "Assegurar-se de que no hay ninguna pieza suelta commo la culata y proceder a girar el motor",
-      "elements": [
-        ""
-      ],
-      "depends_on": [
-        "polea_ciguenal"
-      ],
-      "images": [
-        ""
+        "polea_de_ciguenal_conjunto.JPG"
       ]
     },
     {
       "id": "junta_ciguenal",
-      "title": "Retirar junta de cigüeñal",
-      "description": "Extraer junta y revisar posibles fugas o desgaste.",
+      "title": "Retirar cojinete de cigüeñal",
+      "description": "Extraer cojinete y revisar posibles fugas o desgaste.",
       "elements": [
         "junta_ciguenal"
       ],
       "depends_on": [
-        "girar_motor"
+        "Retirar cojinete de cigüeñal"
       ],
       "images": [
-        "Junta_cigüeñal_bloque.jpg"
+        "cojinete_de_ciguenal_conjunto.jpeg"
       ]
     },
     {
@@ -286,7 +272,7 @@
         "junta_ciguenal"
       ],
       "images": [
-        "carter_cnjunto.jpeg"
+        "carter_conjunto.JPG"
       ]
     },
     {
@@ -300,21 +286,7 @@
         "carter"
       ],
       "images": [
-        "tapa_plastico_aceite_conjunto.jpeg"
-      ]
-    },
-    {
-      "id": "soporte_lateral_ciguenal2",
-      "title": "Extraer piñón de fuerza de cigüeñal",
-      "description": "Retirar piñón engranado en el cigüeñal.",
-      "elements": [
-        "pinon_fuerza_ciguenal"
-      ],
-      "depends_on": [
-        "tapa_plastico_aceite"
-      ],
-      "images": [
-        "pinon_fuerza_ciguenal_mesa.jpeg"
+        "tapa_plastico_aceite_conjunto.JPG"
       ]
     },
     {
@@ -328,7 +300,7 @@
         "soporte_lateral_ciguenal2"
       ],
       "images": [
-        "pinon_conjunto.jpeg"
+        "pinon_conjunto.JPG"
       ]
     },
     {
@@ -342,7 +314,7 @@
         "pinon_fuerza_ciguenal"
       ],
       "images": [
-        "soporte_lateral_ciguenal_conjunto.jpeg"
+        "soporte_lateral_del_ciguenal_conjunto.JPG"
       ]
     },
     {
@@ -356,7 +328,7 @@
         "soporte_lateral_ciguenal"
       ],
       "images": [
-        "bomba_aceite_conjunto.jpeg"
+        "bomba_aceite_conjunto.JPG"
       ]
     },
     {
@@ -370,7 +342,7 @@
         "bomba_aceite"
       ],
       "images": [
-        "tensor_cadena_de_bomba_de_aceite_conjunto.jpeg"
+        "tensor_cadena_de_bomba_de_aceite_conjunto.JPG"
       ]
     },
     {
@@ -384,7 +356,7 @@
         "tensor_cadena_bomba_aceite"
       ],
       "images": [
-        "corona bomba de aceite.jpg"
+        "corona_bomba_de_aceite_conjunto.JPG"
       ]
     },
     {
@@ -398,7 +370,7 @@
         "corona_bomba_aceite"
       ],
       "images": [
-        "cadena_de_bomba_de_aceite_conjunto.jpg"
+        "cadena_de_bomba_de_aceite_conjunto.JPG"
       ]
     },
     {
@@ -412,49 +384,21 @@
         "cadena_bomba_aceite"
       ],
       "images": [
-        "abrazadera_piston_mesa.jpeg"
+        "abrazadera_piston_conjunto.jpeg"
       ]
     },
     {
-      "id": "piston",
-      "title": "Extraer pistones",
-      "description": "Retirar pistones del interior de los cilindros.",
-      "elements": [
-        "piston"
-      ],
-      "depends_on": [
-        "abrazadera_piston"
-      ],
-      "images": [
-        "piston_mesa.jpeg"
-      ]
-    },        
-    {
-      "id": "biela",
-      "title": "Extraer bielas",
-      "description": "Retirar bielas que unen pistón y cigüeñal.",
-      "elements": [
-        "biela"
-      ],
-      "depends_on": [
-        "piston"
-      ],
-      "images": [
-        "biela_mesa.jpeg"
-      ]
-    }, 
-    {
-      "id": "cojinete_biela",
-      "title": "Extraer cojinetes de la biela",
+      "id": "conj",
+      "title": "Extraer piston + biela + cojinetes de la biela",
       "description": "Separar las bielas de sus cojinetes.",
       "elements": [
         "cojinete_biela"
       ],
       "depends_on": [
-        "biela"
+        "abrazadera_piston"
       ],
       "images": [
-        "cojinete.jpg"
+        "pbc_conjunto.jpeg"
       ]
     },
     {
@@ -465,7 +409,7 @@
         "bulon"
       ],
       "depends_on": [
-        "cojinete_biela"
+        "conj"
       ],
       "images": [
         "bulon_mesa.jpeg"
