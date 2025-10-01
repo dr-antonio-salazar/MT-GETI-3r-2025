@@ -85,8 +85,7 @@
         "arbol_balancines"
       ],
       "images": [
-        "abrazadera_arbol_levas_mesa.jpeg",
-        "arbol_levas_conjunto.JPG"
+        "abrazadera_arbol_levas_mon.jpeg"
       ]
     },
     {
@@ -114,7 +113,7 @@
         "arbol_levas"
       ],
       "images": [
-        "cojinetes_lubricacion_arbol_levas_conjunto.JPG"
+        "cojinete_lubricacion_arbol_levas_conjunto.JPG"
       ]
     },
     {
@@ -272,7 +271,7 @@
         "polea_ciguenal"
       ],
       "images": [
-        "carter_conjunto.JPG"
+        "motor_girado_mon.jpeg"
       ]
     },
     {
@@ -314,7 +313,7 @@
         "pinon_fuerza_ciguenal"
       ],
       "images": [
-        "soporte_lateral_del_ciguenal_conjunto.JPG"
+        "soporte_lateral_ciguenal_mon.jpeg"
       ]
     },
     {
@@ -346,28 +345,15 @@
       ]
     },
     {
-      "id": "corona_bomba_aceite",
-      "title": "Quitar corona de bomba de aceite",
+      "id": "corona_cadena_bomba_aceite",
+      "title": "Quitar corona y cadena de la bomba de aceite",
       "description": "Extraer engranaje de transmisión de la bomba de aceite.",
       "elements": [
-        "corona_bomba_aceite"
-      ],
-      "depends_on": [
-        "tensor_cadena_bomba_aceite"
-      ],
-      "images": [
-        "corona_bomba_de_aceite_conjunto.JPG"
-      ]
-    },
-    {
-      "id": "cadena_bomba_aceite",
-      "title": "Quitar cadena de bomba de aceite",
-      "description": "Separar la cadena de la corona.",
-      "elements": [
+        "corona_bomba_aceite",
         "cadena_bomba_aceite"
       ],
       "depends_on": [
-        "corona_bomba_aceite"
+        "tensor_cadena_bomba_aceite"
       ],
       "images": [
         "cadena_de_bomba_de_aceite_conjunto.JPG"
@@ -381,7 +367,7 @@
         "abrazadera_piston"
       ],
       "depends_on": [
-        "cadena_bomba_aceite"
+        "corona_cadena_bomba_aceite"
       ],
       "images": [
         "abrazadera_piston_conjunto.jpeg"
@@ -392,27 +378,16 @@
       "title": "Extraer piston + biela + cojinetes de la biela",
       "description": "Separar las bielas de sus cojinetes.",
       "elements": [
-        "cojinete_biela"
+        "cojinete_biela",
+        "biela",
+        "bulon",
+        "pbc"
       ],
       "depends_on": [
         "abrazadera_piston"
       ],
       "images": [
         "pbc_conjunto.jpeg"
-      ]
-    },
-    {
-      "id": "bulon",
-      "title": "Quitar bulones",
-      "description": "Retirar pasadores que unen pistones y bielas.",
-      "elements": [
-        "bulon"
-      ],
-      "depends_on": [
-        "conj"
-      ],
-      "images": [
-        "bulon_mesa.jpeg"
       ]
     },
     {
@@ -423,7 +398,7 @@
         "abrazadera_ciguenal"
       ],
       "depends_on": [
-        "bulon"
+        "conj"
       ],
       "images": [
         "abrazadera_ciguenal_mesa.jpeg"
@@ -440,7 +415,7 @@
         "abrazadera_ciguenal"
       ],
       "images": [
-        "cigüeñal.jpg"
+        "ciguenal_mon.jpeg"
       ]
     },    
     {
