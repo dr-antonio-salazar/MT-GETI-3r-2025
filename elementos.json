@@ -199,10 +199,10 @@
       "cad_model": [""]
     },
     {
-      "id": "piston",
-      "name": "Pistón",
+      "id": "pbc",
+      "name": "conj",
       "description": "El pistón es el componente del motor que se mueve dentro del cilindro, transmitiendo la fuerza de la combustión a la biela y, finalmente, al cigüeñal para generar movimiento rotatorio.",
-      "images": ["piston_mesa.jpeg"],
+      "images": ["pbc.jpeg"],
       "cad_model": ["pistón.SLDPRT"]
     },
     {
