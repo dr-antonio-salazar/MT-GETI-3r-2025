@@ -157,6 +157,13 @@
       "cad_model": [""]
     },
     {
+      "id": "soporte_lateral_ciguenal_2",
+      "name": "Soporte lateral del cigüeñal 2",
+      "description": "Elemento que fija y estabiliza el cigüeñal en su posición.",
+      "images": ["soporte_lateral_del_ciguenal_2.JPG"],
+      "cad_model": [""]
+    },
+    {
       "id": "tensor_cadena_bomba_aceite",
       "name": "Tensor de la cadena de la bomba de aceite",
       "description": "Dispositivo que mantiene tensa la cadena de transmisión de la bomba de aceite.",
