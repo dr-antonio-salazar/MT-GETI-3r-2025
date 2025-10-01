@@ -255,7 +255,7 @@
         "junta_ciguenal"
       ],
       "depends_on": [
-        "Retirar cojinete de cigüeñal"
+        "ciguenal"
       ],
       "images": [
         "cojinete_de_ciguenal_conjunto.jpeg"
@@ -269,7 +269,7 @@
         "carter"
       ],
       "depends_on": [
-        "junta_ciguenal"
+        "polea_ciguenal"
       ],
       "images": [
         "carter_conjunto.JPG"
@@ -297,7 +297,7 @@
         "pinon_fuerza_ciguenal"
       ],
       "depends_on": [
-        "soporte_lateral_ciguenal2"
+        "tapa_plastico_aceite"
       ],
       "images": [
         "pinon_conjunto.JPG"
