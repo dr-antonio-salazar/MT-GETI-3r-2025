@@ -247,20 +247,6 @@
       ]
     },
     {
-      "id": "junta_ciguenal",
-      "title": "Retirar cojinete de cigüeñal",
-      "description": "Extraer cojinete y revisar posibles fugas o desgaste.",
-      "elements": [
-        "junta_ciguenal"
-      ],
-      "depends_on": [
-        "proteccion_interior_sistema_distribucion"
-      ],
-      "images": [
-        "cojinete_de_ciguenal_conjunto.jpeg"
-      ]
-    },
-    {
       "id": "carter",
       "title": "Desmontar cárter",
       "description": "Aflojar tornillos inferiores y retirar cárter con cuidado.",
@@ -268,7 +254,7 @@
         "carter"
       ],
       "depends_on": [
-        "polea_ciguenal"
+        "proteccion_interior_sistema_distribucion"
       ],
       "images": [
         "motor_girado_mon.jpeg"
@@ -448,7 +434,21 @@
       "images": [
         "ciguenal_mon.jpeg"
       ]
-    },    
+    },
+    {
+      "id": "junta_ciguenal",
+      "title": "Retirar cojinete de cigüeñal",
+      "description": "Extraer cojinete y revisar posibles fugas o desgaste.",
+      "elements": [
+        "junta_ciguenal"
+      ],
+      "depends_on": [
+        "ciguenal"
+      ],
+      "images": [
+        "cojinete_de_ciguenal_conjunto.jpeg"
+      ]
+    },
     {
       "id": "bloque_motor",
       "title": "Bloque motor es lo que queda restante en la base",
@@ -457,7 +457,7 @@
         "bloque_motor"
       ],
       "depends_on": [
-        "ciguenal"
+        "junta_ciguenal"
       ],
       "images": [
         "bloque_motor_mon.jpeg"
