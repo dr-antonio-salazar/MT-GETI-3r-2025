@@ -49,7 +49,7 @@
       "name": "Árbol de levas",
       "description": "Eje que soporta los balancines y permite su movimiento oscilante.",
       "images": ["arbol_levas_mesa.jpeg"],
-      "cad_model": [""]
+      "cad_model": ["arbol_levas.SLDPRT"]
     },
     {
       "id": "cojinetes_lubricacion_arbol_levas",
