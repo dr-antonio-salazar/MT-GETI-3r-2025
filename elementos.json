@@ -42,7 +42,7 @@
       "name": "Abrazadera árbol de levas",
       "description": "Pieza de sujeción que mantiene el árbol de levas firmemente en su posición.",
       "images": ["abrazadera_arbol_levas_mesa.jpeg"],
-      "cad_model": [""]
+      "cad_model": ["abrazadera_arbol_levas1.SLDPRT", "abrazadera_arbol_levas2.SLDPRT", "abrazadera_arbol_levas3.SLDPRT"]
     },
     {
       "id": "arbol_levas",
@@ -56,7 +56,7 @@
       "name": "Cojinetes lubricación árbol de levas",
       "description": "Conducto interno que distribuye el aceite lubricante a las distintas partes móviles del motor.",
       "images": ["canal_lubricacion_mesa.jpeg"],
-      "cad_model": [""]
+      "cad_model": ["cojinetes_lubricacion_arbol_levas.SLDPRT"]
     },
     {
       "id": "tapa_accionadora_valvulas",
@@ -84,7 +84,7 @@
       "name": "Culata",
       "description": "Parte superior del motor que cierra los cilindros y alberga válvulas, bujías e inyectores.",
       "images": ["culata_mesa.jpeg"],
-      "cad_model": [""]
+      "cad_model": ["culata.SLDPRT"]
     },
     {
       "id": "junta_culata",
