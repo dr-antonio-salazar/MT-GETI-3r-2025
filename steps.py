@@ -142,13 +142,14 @@ def main():
 
     # Botones Anterior/Siguiente realmente centrados y juntos (sin columnas 50/50)
     st.markdown("<div class='nav-row'>", unsafe_allow_html=True)  # fila flex a la izquierda [web:38]
-    col_btn_prev, col_btn_next = st.columns([1, 1], gap="small")  # opcional: columnas mínimas solo para separación [web:29]
-    with col_btn_prev:
-        if st.button("Anterior", key="prev_step"):
-            st.session_state.sidx = (st.session_state.sidx - 1) % len(ordered_steps)  # [web:37]
-    with col_btn_next:
-        if st.button("Siguiente", key="next_step"):
-            st.session_state.sidx = (st.session_state.sidx + 1) % len(ordered_steps)  # [web:37]
+    b_prev = st.button("Anterior", key="prev_step")                # [web:24]
+    b_next = st.button("Siguiente", key="next_step")               # [web:24]
+    st.markdown("</div>", unsafe_allow_html=True)                  # [web:38]
+    
+    if b_prev:
+        st.session_state.sidx = (st.session_state.sidx - 1) % len(ordered_steps)  # [web:24]
+    if b_next:
+        st.session_state.sidx = (st.session_state.sidx + 1) % len(ordered_steps)  # [web:24]
     st.markdown("</div>", unsafe_allow_html=True)  # cierre fila
 
     # Paso actual
@@ -224,3 +225,4 @@ def main():
 
 if __name__ == "__main__":
     main()  # ejecutar app [web:1]
+
