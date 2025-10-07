@@ -184,6 +184,23 @@ def main():
 
     # Sección piezas centrada
     st.markdown("<h3 class='center-title'>Piezas</h3>", unsafe_allow_html=True)  # encabezado piezas [web:1]
+
+    # Botones de piezas centrados y juntos solo si hay varias
+        if len(step_elements) > 1:  # cuenta en steps.json para decidir visibilidad [file:34]
+            st.markdown("<div class='nav-row'>", unsafe_allow_html=True)  # fila flex centrada [web:1]
+            cc1, cc2, cc3 = st.columns([1, 1, 1], gap="small")  # columna central aloja ambos botones [web:1]
+            with cc2:
+                pb1, pb2 = st.columns([1, 1], gap="small")  # botones juntos [web:1]
+                with pb1:
+                    if st.button("Pieza anterior", key=f"prev_piece_{step_id}"):
+                        st.session_state[ekey] = (eidx - 1) % len(step_elements)  # anterior [web:15]
+                with pb2:
+                    if st.button("Siguiente pieza", key=f"next_piece_{step_id}"):
+                        st.session_state[ekey] = (eidx + 1) % len(step_elements)  # siguiente [web:15]
+            st.markdown("</div>", unsafe_allow_html=True)  # cierre fila [web:1]
+    else:
+        st.info("Sin piezas asociadas en este paso.")  # no hay elementos para este paso [file:34]
+      
     if step_elements:
         ekey = f"eidx_{step_id}"
         eidx = st.session_state.get(ekey, 0) % len(step_elements)  # índice acotado [web:15]
@@ -206,24 +223,11 @@ def main():
         else:
             st.info("Imagen de la pieza no encontrada en ./images.")  # sin imagen de pieza [web:15]
 
-        # Botones de piezas centrados y juntos solo si hay varias
-        if len(step_elements) > 1:  # cuenta en steps.json para decidir visibilidad [file:34]
-            st.markdown("<div class='nav-row'>", unsafe_allow_html=True)  # fila flex centrada [web:1]
-            cc1, cc2, cc3 = st.columns([1, 1, 1], gap="small")  # columna central aloja ambos botones [web:1]
-            with cc2:
-                pb1, pb2 = st.columns([1, 1], gap="small")  # botones juntos [web:1]
-                with pb1:
-                    if st.button("Pieza anterior", key=f"prev_piece_{step_id}"):
-                        st.session_state[ekey] = (eidx - 1) % len(step_elements)  # anterior [web:15]
-                with pb2:
-                    if st.button("Siguiente pieza", key=f"next_piece_{step_id}"):
-                        st.session_state[ekey] = (eidx + 1) % len(step_elements)  # siguiente [web:15]
-            st.markdown("</div>", unsafe_allow_html=True)  # cierre fila [web:1]
-    else:
-        st.info("Sin piezas asociadas en este paso.")  # no hay elementos para este paso [file:34]
+        
 
 if __name__ == "__main__":
     main()  # ejecutar app [web:1]
+
 
 
 
