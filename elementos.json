@@ -12,42 +12,42 @@
     {
       "id": "junta_colector_admision",
       "name": "Junta colector de admisión",
-      "description": "Elemento de sellado que evita fugas entre el colector de admisión y la culata.",
+      "description": "\n\n**FUNCIÓN**\n\n- Asegura el sellado hermético entre el colector y la culata.\n- Evita fugas de aire o mezcla, que alterarían la combustión.\n\n**MATERIALES**\n\n- Goma, silicona, teflón, caucho o materiales multicapa con refuerzo metálico.\n\n**FALLO TÍPICO: FUGAS DE AIRE NO MEDIDO**\n\nUna fuga de aire en el colector de admisión deja pasar aire sin medir, se inyecta menos gasolina de la necesaria → la mezcla se empobrece → el motor funciona mal (ralentí irregular, pérdida de potencia).",
       "images": ["junta_colector_admision_mesa.jpeg"],
       "cad_model": [""]
     },
     {
       "id": "tapa_balancines",
       "name": "Tapa de balancines",
-      "description": "Cubierta superior que protege y sella el conjunto de balancines del motor.",
+      "description": "\n\n**FUNCIÓN**\n\n- Cubre y protege los elementos de la distribución (balancines, eje, válvulas).\n- Evita fugas de aceite y protege de la suciedad y humedad.\n\n**CARACTERÍSTICAS**\n\n- Hecha en acero o plástico.\n- Lleva una junta de goma o corcho para sellar.\n- Incorpora tapa de llenado de aceite y filtro de carbón activo para vapores.\n\n**UBICACIÓN**\n\n- Situada encima de la culata.",
       "images": ["tapa_balancines_mesa.jpeg"],
       "cad_model": [""]
     },
     {
       "id": "bomba_combustible",
       "name": "Bomba de combustible",
-      "description": "",
+      "description": "\n\n**FUNCIÓN**\n\n- Transfiere el combustible del depósito al sistema de inyección o al colector de admisión.\n\n**UBICACIÓN**\n\n- En el depósito de combustible o próxima a él.\n\n**TIPOS DE BOMBAS**\n\n- **De baja presión (inyección en colector de admisión):** eléctricas, situadas en el interior del depósito.\n- **De alta presión (inyección directa):** mecánicas, montadas sobre el motor.\n\n**CARACTERÍSTICAS**\n\n- Trabaja a diferentes presiones según la potencia del motor.\n- A mayor potencia requerida, mayor caudal y potencia de la bomba.",
       "images": ["bomba_combustible_mesa.jpeg"],
       "cad_model": [""]
     },
     {
       "id": "arbol_balancines",
       "name": "Balancines",
-      "description": "Eje sobre el cual se montan los balancines que transmiten el movimiento de las levas a las válvulas.",
+      "description": "\n\n**FUNCIÓN**\n\n- Son accionados por el árbol de levas.\n- Transmiten su movimiento hacia los inyectores o válvulas.\n- Cuando la leva empuja el balancín, este baja su extremo y actúa sobre el inyector o válvula, abriéndolo.\n- Al girar la leva y dejar de empujar, el balancín vuelve a su posición inicial gracias al muelle del inyector o de la válvula.\n\n**TIPOS DE BALANCINES**\n\n**Balancines de apoyo fijo**\n- Montados sobre un eje o puente que actúa como punto fijo de apoyo.\n- El movimiento de la leva o varilla hace oscilar el balancín sobre ese eje.\n- Simples, económicos y robustos, usados en motores con árbol de levas lateral (OHV) o único árbol en cabeza (SOHC).\n- Requieren ajuste manual del juego de válvulas con el tiempo.\n\n**Balancines de rodillo**\n- Incorporan un rodillo o rodamiento en el punto de contacto con la leva.\n- Reducen la fricción y el desgaste, ya que ruedan en lugar de deslizar.\n- Funcionamiento más suave, eficiente y duradero, con menor consumo y emisiones.\n- Usados en motores modernos de alto rendimiento o eficiencia optimizada.\n\n**Balancines hidráulicos**\n- Incluyen un taqué hidráulico que se autoregula con la presión del aceite.\n- Mantienen el juego en “cero”, compensando desgaste y dilatación térmica.\n\n**Ventajas:**\n- Sin mantenimiento (no requiere ajuste manual).\n- Funcionamiento silencioso.\n- Mayor precisión en apertura y cierre de válvulas.\n\n**Inconvenientes:**\n- Más sensibles a la presión y calidad del aceite.\n- Si fallan, pueden provocar ruidos o pérdida de rendimiento.\n\n**MATERIALES Y LUBRICACIÓN**\n\n- Fabricados en acero aleado o aluminio con tratamientos antidesgaste.\n- Se lubrican mediante conductos internos de aceite que parten de la culata o del eje de balancines.\n- La lubricación es esencial para evitar desgaste prematuro y mantener operación precisa.",
       "images": ["arbol_balancines_mesa.jpeg"],
       "cad_model": [""]
     },
     {
       "id": "abrazadera_arbol_levas",
       "name": "Abrazadera árbol de levas",
-      "description": "Pieza de sujeción que mantiene el árbol de levas firmemente en su posición.",
+      "description": "\n\n- Sujeta el árbol de levas a la culata mediante tornillos.\n- Permite que el árbol gire con precisión y sin exceso de juego.\n- Es esencial para mantener la sincronización y el correcto funcionamiento del sistema de distribución.",
       "images": ["abrazadera_arbol_levas_mesa.jpeg"],
       "cad_model": ["abrazadera_arbol_levas1.SLDPRT", "abrazadera_arbol_levas2.SLDPRT", "abrazadera_arbol_levas3.SLDPRT"]
     },
     {
       "id": "arbol_levas",
       "name": "Árbol de levas",
-      "description": "Eje que soporta los balancines y permite su movimiento oscilante.",
+      "description": "\n\n- Controla el tiempo y la apertura de las válvulas de admisión y escape.\n- Consta de levas de admisión, de escape y, en algunos casos, de inyección.\n- Las levas giran y abren las válvulas directamente o a través de taqués y balancines.\n- En algunos motores, los balancines no están presentes y las levas actúan directamente sobre las válvulas.",
       "images": ["arbol_levas_mesa.jpeg"],
       "cad_model": ["arbol_levas.SLDPRT"]
     },
@@ -82,7 +82,7 @@
     {
       "id": "culata",
       "name": "Culata",
-      "description": "Parte superior del motor que cierra los cilindros y alberga válvulas, bujías e inyectores.",
+      "description": "\n\n- Cierra los cilindros por la parte superior y forma la cámara de combustión junto con el bloque y el pistón.\n- Fabricada en aluminio o hierro colado.\n- Contiene válvulas de admisión y escape, los inyectores y conductos de refrigeración y lubricación.\n\n**FUNCIONES PRINCIPALES**\n\n- Cerrar los cilindros y evitar fugas de gases.\n- Controlar el flujo de gases mediante las válvulas.\n- Albergar el sistema de inyección y encendido.\n\nEntre la culata y el bloque se encuentra la **junta de culata**, que asegura el cierre hermético y aísla los conductos de aceite y refrigerante.",
       "images": ["culata_mesa.jpeg"],
       "cad_model": ["culata.SLDPRT"]
     },
@@ -103,7 +103,7 @@
     {
       "id": "bomba_agua",
       "name": "Bomba de agua",
-      "description": "Componente que hace circular el refrigerante a través del motor y el radiador.",
+      "description": "\n\n**FUNCIÓN**\n\n- Mantiene la temperatura del motor en un rango óptimo.\n- Circula el refrigerante a través del motor y el radiador para disipar el calor.\n- Se acciona mediante una correa conectada al cigüeñal.",
       "images": ["bomba_agua_mesa.jpeg"],
       "cad_model": [""]
     },
@@ -131,7 +131,7 @@
     {
       "id": "carter",
       "name": "Cárter",
-      "description": "Recipiente inferior que contiene el aceite lubricante del motor.",
+      "description": "\n\n**FUNCIÓN**\n\n- Cierra el bloque del motor por la parte inferior.\n- Contiene el aceite lubricante y la bomba de aceite.\n- Protege los componentes internos del motor.\n\n**UBICACIÓN**\n\n- Situado debajo del motor.\n\n**TIPOS**\n\n- **Tipo seco:** el depósito de aceite está separado del motor.\n- **Tipo húmedo:** el lubricante se encuentra en el fondo del cárter, como una bañera.",
       "images": ["carter_mesa.jpeg"],
       "cad_model": [""]
     },
