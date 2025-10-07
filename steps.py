@@ -141,17 +141,15 @@ def main():
         st.session_state.sidx = 0  # índice del paso actual [web:15]
 
     # Botones Anterior/Siguiente realmente centrados y juntos (sin columnas 50/50)
-    st.markdown("<div class='nav-row'>", unsafe_allow_html=True)  # fila flex centrada [web:1]
-    c1, c2, c3 = st.columns([1, 1, 1], gap="small")  # columnas pequeñas solo para alojar botones centrados visualmente [web:1]
-    with c2:
-        b_prev, b_next = st.columns([1, 1], gap="small")  # los dos botones van juntos y centrados en la columna central [web:1]
-        with b_prev:
-            if st.button("Anterior", key="prev_step"):
-                st.session_state.sidx = (st.session_state.sidx - 1) % len(ordered_steps)  # navegación circular [web:9]
-        with b_next:
-            if st.button("Siguiente", key="next_step"):
-                st.session_state.sidx = (st.session_state.sidx + 1) % len(ordered_steps)  # navegación circular [web:9]
-    st.markdown("</div>", unsafe_allow_html=True)  # cierre de fila [web:1]
+    st.markdown("<div class='nav-row'>", unsafe_allow_html=True)  # fila flex a la izquierda [web:38]
+    col_btn_prev, col_btn_next = st.columns([1, 1], gap="small")  # opcional: columnas mínimas solo para separación [web:29]
+    with col_btn_prev:
+        if st.button("Anterior", key="prev_step"):
+            st.session_state.sidx = (st.session_state.sidx - 1) % len(ordered_steps)  # [web:37]
+    with col_btn_next:
+        if st.button("Siguiente", key="next_step"):
+            st.session_state.sidx = (st.session_state.sidx + 1) % len(ordered_steps)  # [web:37]
+    st.markdown("</div>", unsafe_allow_html=True)  # cierre fila
 
     # Paso actual
     step = ordered_steps[st.session_state.sidx]
@@ -225,6 +223,7 @@ def main():
 
 if __name__ == "__main__":
     main()  # ejecutar app [web:1]
+
 
 
 
