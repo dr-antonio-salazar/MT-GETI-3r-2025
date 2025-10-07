@@ -17,7 +17,7 @@ st.markdown("""
 /* Títulos, texto e imágenes centrados */
 .center-title { text-align: center; margin: 0.2rem 0 0.3rem 0; }
 .center-text  { text-align: center; }
-.desc-text    { text-align: center; margin: 0.2rem 0 0.6rem 0; font-size: 0.95rem; opacity: 0.9; }
+.desc-text    { text-align: left; margin: 0.2rem 0 0.6rem 0; font-size: 0.95rem; opacity: 0.9; }
 
 /* Fila de navegación: dos botones juntos y centrados (sin columnas 50/50) */
 .nav-row { display: flex; justify-content: center; align-items: center; gap: 0.6rem; margin: 0.2rem 0 0.35rem 0; }
@@ -225,3 +225,4 @@ def main():
 
 if __name__ == "__main__":
     main()  # ejecutar app [web:1]
+
