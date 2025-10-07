@@ -150,7 +150,6 @@ def main():
         st.session_state.sidx = (st.session_state.sidx - 1) % len(ordered_steps)  # [web:24]
     if b_next:
         st.session_state.sidx = (st.session_state.sidx + 1) % len(ordered_steps)  # [web:24]
-    st.markdown("</div>", unsafe_allow_html=True)  # cierre fila
 
     # Paso actual
     step = ordered_steps[st.session_state.sidx]
@@ -191,16 +190,16 @@ def main():
         # Botones de piezas centrados y juntos solo si hay varias
         if len(step_elements) > 1:  # cuenta en steps.json para decidir visibilidad [file:34]
             st.markdown("<div class='nav-row'>", unsafe_allow_html=True)  # fila flex centrada [web:1]
-            cc1, cc2, cc3 = st.columns([1, 1, 1], gap="small")  # columna central aloja ambos botones [web:1]
-            with cc2:
-                pb1, pb2 = st.columns([1, 1], gap="small")  # botones juntos [web:1]
-                with pb1:
-                    if st.button("Pieza anterior", key=f"prev_piece_{step_id}"):
-                        st.session_state[ekey] = (eidx - 1) % len(step_elements)  # anterior [web:15]
-                with pb2:
-                    if st.button("Siguiente pieza", key=f"next_piece_{step_id}"):
-                        st.session_state[ekey] = (eidx + 1) % len(step_elements)  # siguiente [web:15]
-            st.markdown("</div>", unsafe_allow_html=True)  # cierre fila [web:1]
+            b_prev_piece = st.button("Pieza anterior", key=f"prev_piece_{step_id}")  # [web:24]
+            b_next_piece = st.button("Siguiente pieza", key=f"next_piece_{step_id}")  # [web:24]
+            st.markdown("</div>", unsafe_allow_html=True)  # [web:38]
+        
+            if b_prev_piece:
+                st.session_state[ekey] = (eidx - 1) % len(step_elements)  # [web:24]
+                eidx = st.session_state[ekey]  # actualizar índice local  # [web:29]
+            if b_next_piece:
+                st.session_state[ekey] = (eidx + 1) % len(step_elements)  # [web:24]
+                eidx = st.session_state[ekey]  # actualizar índice local  # [web:29]
         current_eid = step_elements[eidx]
         name, desc, e_img = element_info_and_image(current_eid)
 
@@ -225,4 +224,5 @@ def main():
 
 if __name__ == "__main__":
     main()  # ejecutar app [web:1]
+
 
