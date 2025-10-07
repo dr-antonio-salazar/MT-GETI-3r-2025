@@ -20,7 +20,7 @@ st.markdown("""
 .desc-text    { text-align: left; margin: 0.2rem 0 0.6rem 0; font-size: 0.95rem; opacity: 0.9; }
 
 /* Fila de navegación: dos botones juntos y centrados (sin columnas 50/50) */
-.nav-row { display: flex; justify-content: center; align-items: center; gap: 0.6rem; margin: 0.2rem 0 0.35rem 0; }
+.nav-row { display: flex; justify-content: flex-start; align-items: center; gap: 0.6rem; margin: 0.2rem 0 0.35rem 0; }
 .nav-row .stButton > button { padding: 0.45rem 1.0rem; border-radius: 8px; }
 
 /* Contenedor de imagen centrado con ancho máximo común */
@@ -225,5 +225,6 @@ def main():
 
 if __name__ == "__main__":
     main()  # ejecutar app [web:1]
+
 
 
