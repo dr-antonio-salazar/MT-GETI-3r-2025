@@ -70,7 +70,7 @@
       "name": "Tapa central y exterior",
       "description": "Cubiertas protectoras que cierran y protegen el sistema de distribución.",
       "images": ["tapa_central_exterior_mesa.jpeg"],
-      "cad_model": [""]
+      "cad_model": ["tapa_accionadora_valvulas.SLDPRT"]
     },
     {
       "id": "tensor_correa",
