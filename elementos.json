@@ -147,7 +147,7 @@
       "name": "Piñón de fuerza de cigüeñal",
       "description": "Engranaje que transmite el movimiento del cigüeñal a otros sistemas del motor.",
       "images": ["pinon_fuerza_ciguenal_mesa.jpeg"],
-      "cad_model": [""]
+      "cad_model": ["pinon_fuerza_ciguenal.SLDPRT"]
     },
     {
       "id": "soporte_lateral_ciguenal",
